@@ -1,0 +1,36 @@
+1. Setelah project frontend di instal kemudian hpus beberpa file sepert app.css,index.css
+2. instal bootstrap dukumentasi di "react bootstrap" : npm install react-bootstrap bootstrap
+3. pasang import 'bootstrap/dist/css/bootstrap.min.css'; di App.jsx
+4. instal router dom : "npm i react-router-dom"
+5. tambahkan tag " <BrowserRouter></BrowserRouter>" di main.jsx
+6. short cut "rafce" untuk membuat struktur 
+7. "react-simple-wysiwyg" Untuk membuat text editor
+   - install "npm i react-simple-wysiwyg"
+   - tambahakan ini di form atau tempat text editor
+     > import Editor from 'react-simple-wysiwyg';
+     > di dalam function " const [html, setHtml] = useState('');
+    function onChange(e) {
+        setHtml(e.target.value);
+      }"
+     > didalam return "<Editor  containerProps={{ style: { height: '300px' } }} 
+                    value={html} onChange={onChange} />"
+
+8. cara cek API postman 
+   1. fungsi create 
+     > tambahkan link > pergi ke body > pilih row > pilih JSON > kirim data 
+      "{
+   	 "title" : "Dummy Title",
+   	 "author" : "Safania"
+       }"
+9. buat "React form hook" 
+   > install "npm install react-hook-form"
+10. react toastify untuk di file app.jsx
+11. cara membuat faker
+   - install faker : composer require fakerphp/faker
+   - membuat seeder : php artisan make:seeder BlogSeeder
+   - stting BlogSeeder apa saja yang di butuhkan 
+   - jalankan perintah : php artisan db:seed --class=BlogSeeder
+12. Cara Membuat seeder
+   - Buat Seeder : php artisan make:seeder UserSeeder
+   - di DatabaseSeeder bagian run tambahkan : $this->call(UserSeeder::class);
+   - jalankan : php artisan db:seed
